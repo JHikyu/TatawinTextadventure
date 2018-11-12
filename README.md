@@ -43,7 +43,10 @@ var advData = {
 [WriteVar](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#WriteVar),
 [SetVar](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#SetVar),
 [Choice](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#Choice),
-[DBExists](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#DBExists)
+[DBExists](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#DBExists),
+[DBWrite](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#DBWrite),
+[DBGetAll](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#DBGetAll),
+[DBGet](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#DBGet)
 
 
 ### none
@@ -285,6 +288,96 @@ var advData = {
         },
         Nein: {
             Text: "Existiert nicht in der Datenbank",
+            Settings: {
+                Typ: "none"
+            }
+        }
+    }
+}
+```
+
+### DBWrite
+überschreibt beliebig viele einträge in der Datenbank.
+
+- Zusätzlich:
+    - To: (Id)
+    - What: "(Pfad des Datenbank 'Ordners')"
+    - Write:
+        - Menge: (Anzahl der Möglichkeiten)
+        - 1: "(Eintragname:::Inhalt)"
+        - 2: ...
+        - ...
+```
+var advData = {
+    "(Ort)": {
+        1: {
+            Text: "Datenbank wird beschrieben..",
+            Settings: {
+                Typ: "DBWrite",
+                What: "DeineDatenbank/Settings",
+                Write: {
+                     Menge: 2,
+                     1: "Vollbild:::true",
+                     2: "Lang:::GER-DE"
+                }
+            }
+        }
+    }
+}
+```
+
+### DBGetAll
+speichert alle Einträge aus einem Datenbank-Pfad in einen Array.
+
+- Zusätzlich:
+    - To: (Id)
+    - What: "(Pfad des Datenbank 'Ordners')"
+    - Var: "(Array, in der alles gespeichert wird)"
+```
+var advData = {
+    "(Ort)": {
+        1: {
+            Text: "Variable wird beschrieben..",
+            Settings: {
+                Typ: "DBGetAll",
+                What: "TatawinTextadventure/Nutzer",
+                Var: "complete",
+                To: 2
+            }
+        },
+        2: {
+            Text: "Mein Array: °complete°",
+            Settings: {
+                Typ: "none"
+            }
+        }
+    }
+}
+```
+
+### DBGet
+speichert den Eintrag aus einem Datenbank-Pfad in eine Variable.
+
+- Zusätzlich:
+    - To: (Id)
+    - What: "(Pfad des Datenbank 'Ordners')"
+    - Get: "(Key des Gesuchten Elementes)"
+    - Var: "(Variable in der das Element gespeichert wird)"
+```
+var advData = {
+    "(Ort)": {
+        1: {
+            Text: "Variable wird beschrieben..",
+            Settings: {
+                Typ: "DBGet",
+                What: "TatawinTextadventure/Nutzer",
+                Get: "Passwort",
+                Var: "passwort",
+                To: 2
+            }
+        },
+        2: {
+            Text: "Meine Variable: °passwort°",
             Settings: {
                 Typ: "none"
             }
