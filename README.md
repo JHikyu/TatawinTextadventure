@@ -82,7 +82,7 @@ var advData = {
 ```
 
 ### Bool
-springt nach Drücken einer Taste zum in **To** definierten Bereich.
+wartet auf eingabe von Spieler. Wenn die Eingabe etwas mit Ja zu tun hat, Springe zu True->To. Wenn nicht, Springe zu False->To
 
 - Zusätzlich:
     - True:
@@ -112,6 +112,36 @@ var advData = {
         },
         AntwortFalsch: {
             Text: "Der User hat Nein geschrieben.",
+            Settings: {
+                Typ: "none"
+            }
+        }
+    }
+}
+```
+
+### WriteVar
+lässt den Nutzer eine Variable einschreiben.
+Gib eine Variable mit ° aus. Beispiel: °BeispielVariable°
+
+- Zusätzlich:
+    - To: (Id)
+    - Var: (Variable Name)
+    - Not: (Gesperrte Wörter mit ||| Trennen)
+```
+var advData = {
+    "(Ort)": {
+        1: {
+            Text: "Gib deinen Usernamen ein.",
+            Settings: {
+                Typ: "WriteVar",
+                Var: "username",
+                Not: "1|||,|||:|||-|||_",
+                To: "MeineVariable"
+            }
+        },
+        MeineVariable: {
+            Text: "Dies ist meine Variable: °username°",
             Settings: {
                 Typ: "none"
             }
