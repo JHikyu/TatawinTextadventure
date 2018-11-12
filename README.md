@@ -42,7 +42,10 @@ var advData = {
 [Bool](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#Bool),
 [WriteVar](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#WriteVar),
 [SetVar](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#SetVar),
-[Choice](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#Choice)
+[Choice](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#Choice),
+[DBExists](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#DBExists)
+
+
 ### none
 lässt das Programm für Immer und Ewig warten.
 
@@ -240,6 +243,50 @@ var advData = {
             Settings: {
                 Typ: "Skip",
                 To: 1
+            }
+        }
+    }
+}
+```
+
+### DBExists
+überprüft ob eine Variable in deiner Datenbank existiert.
+Ja: True->To, Nein: False->To
+
+- Zusätzlich:
+    - What: "(Pfad des Datenbank 'Ordners')"
+    - Var: "(Die gesuchte Variable)"
+    - True:
+        - To: (Id)
+    - False:
+        - To: (Id)
+```
+var advData = {
+    "(Ort)": {
+        1: {
+            Text: "Schreibe Ja oder Nein",
+            Settings: {
+                Typ: "DBExists",
+                What: "DeineDatenbank/Users",
+                Var: "username",
+                True: {
+                     To: "Ja"
+                },
+                False: {
+                     To: "Nein"
+                }
+            }
+        },
+        Ja: {
+            Text: "Existiert in der Datenbank",
+            Settings: {
+                Typ: "none"
+            }
+        },
+        Nein: {
+            Text: "Existiert nicht in der Datenbank",
+            Settings: {
+                Typ: "none"
             }
         }
     }
