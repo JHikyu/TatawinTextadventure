@@ -41,7 +41,8 @@ var advData = {
 [Skip](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#Skip),
 [Bool](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#Bool),
 [WriteVar](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#WriteVar),
-[SetVar](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#SetVar)
+[SetVar](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#SetVar),
+[Choice](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#Choice)
 ### none
 lässt das Programm für Immer und Ewig warten.
 
@@ -166,7 +167,7 @@ Gib eine Variable mit ° aus. Beispiel: °BeispielVariable°
 var advData = {
     "(Ort)": {
         1: {
-            Text: "Gib deinen Usernamen ein.",
+            Text: "Ich mache das schon..",
             Settings: {
                 Typ: "SetVar",
                 Var: "menge",
@@ -178,6 +179,67 @@ var advData = {
             Text: "Dies ist meine Variable: °menge°",
             Settings: {
                 Typ: "none"
+            }
+        }
+    }
+}
+```
+
+### Choice
+lässt den Spieler zu eine von mehreren Auswahlmöglichkeiten springen
+
+- Zusätzlich:
+    - Choices:
+        - Menge: (Anzahl der Möglichkeiten)
+        - 1: "(Was muss der Spieler schreiben? Mit ||| Trennen)"
+        - 2: ...
+        - ...
+    1:
+        - To: (Id)
+    2:
+        - To: (Id)
+    ...
+```
+var advData = {
+    "(Ort)": {
+        1: {
+            Text: "Schreibe etwas",
+            Settings: {
+                Typ: "Choice",
+                Choices: {
+                     Menge: 3,
+                     1: "eins|||1|||one",
+                     2: "nein|||vielleicht|||oder|||ja|||wort",
+                     3: "",
+                },
+                1: {
+                     To: "Eins"
+                },
+                2: {
+                     To: "Zwei"
+                },
+                3: {
+                     To: "Leer"
+                }
+            }
+        },
+        Eins: {
+            Text: "Es wurde eins, 1 oder one geschrieben.",
+            Settings: {
+                Typ: "none"
+            }
+        },
+        Zwei: {
+            Text: "Es wurde nein, vielleicht, oder, ja oder wort geschrieben.",
+            Settings: {
+                Typ: "none"
+            }
+        },
+        Leer: {
+            Text: "Es wurde nichts des Gleichen geschrieben.",
+            Settings: {
+                Typ: "Skip",
+                To: 1
             }
         }
     }
