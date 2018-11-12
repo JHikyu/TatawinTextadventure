@@ -37,7 +37,10 @@ var advData = {
 
 
 ## Befehle
-
+[none](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#none)
+[Skip](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#Skip)
+[Bool](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#Bool)
+[WriteVar](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#WriteVar)
 ### none
 lässt das Programm für Immer und Ewig warten.
 
