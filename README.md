@@ -37,10 +37,11 @@ var advData = {
 
 
 ## Befehle
-[none](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#none)
-[Skip](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#Skip)
-[Bool](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#Bool)
-[WriteVar](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#WriteVar)
+[none](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#none),
+[Skip](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#Skip),
+[Bool](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#Bool),
+[WriteVar](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#WriteVar),
+[SetVar](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#SetVar)
 ### none
 lässt das Programm für Immer und Ewig warten.
 
@@ -145,6 +146,36 @@ var advData = {
         },
         MeineVariable: {
             Text: "Dies ist meine Variable: °username°",
+            Settings: {
+                Typ: "none"
+            }
+        }
+    }
+}
+```
+
+### SetVar
+setzt eine Variable.
+Gib eine Variable mit ° aus. Beispiel: °BeispielVariable°
+
+- Zusätzlich:
+    - To: (Id)
+    - Var: (Variable Name)
+    - Set: (Variable Inhalt)
+```
+var advData = {
+    "(Ort)": {
+        1: {
+            Text: "Gib deinen Usernamen ein.",
+            Settings: {
+                Typ: "SetVar",
+                Var: "menge",
+                Set: "Zehn",
+                To: "MeineVariable"
+            }
+        },
+        MeineVariable: {
+            Text: "Dies ist meine Variable: °menge°",
             Settings: {
                 Typ: "none"
             }
