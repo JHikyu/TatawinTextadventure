@@ -19,12 +19,13 @@ Hikyu.js ist auf Javascript [Objekte](https://www.w3schools.com/js/js_objects.as
 
 ```
 var advData = {
-    "*Ort*": {
-        *Name*: {
-        Text: "*Ausgangstext*",
-        Settings: {
-            Typ: "Skip",
-            To: 2
+    "(Ort)": {
+        (Id): {
+            Text: "(Dein Text)",
+            Settings: {
+                Typ: "Skip",
+                To: (Fremd-Id)
+            }
         }
     }
 }
