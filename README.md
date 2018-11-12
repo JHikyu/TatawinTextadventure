@@ -194,9 +194,9 @@ lässt den Spieler zu eine von mehreren Auswahlmöglichkeiten springen
         - 1: "(Was muss der Spieler schreiben? Mit ||| Trennen)"
         - 2: ...
         - ...
-    1:
+    - 1:
         - To: (Id)
-    2:
+    - 2:
         - To: (Id)
     ...
 ```
