@@ -15,13 +15,13 @@ Füge [Hikyu.js](http://semver.org/) in deinem HTML Projekt hinzu
 ## Beispiele
 
 ### Struktur
-Hikyu.js ist auf Javascript [Objekt](https://www.w3schools.com/js/js_objects.asp) aufgebaut.
+Hikyu.js ist auf Javascript [Objekte](https://www.w3schools.com/js/js_objects.asp) aufgebaut.
 
 ```
 var advData = {
-    "**Ort**": {
-        **Name**: {
-        Text: "**Ausgangstext**",
+    "*Ort*": {
+        *Name*: {
+        Text: "*Ausgangstext*",
         Settings: {
             Typ: "Skip",
             To: 2
