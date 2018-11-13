@@ -43,6 +43,7 @@ var advData = {
 [IfNumber](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#IfNumber),
 [WriteVar](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#WriteVar),
 [SetVar](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#SetVar),
+[SetRanVar](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#SetVar),
 [Choice](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#Choice),
 [DBExists](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#DBExists),
 [DBWrite](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#DBWrite),
@@ -246,6 +247,39 @@ var advData = {
 }
 ```
 
+### SetRanVar
+belegt eine Variable mit einer Zufällig generierten Zahl
+Gib eine Variable mit ° aus. Beispiel: °BeispielVariable°
+
+- Zusätzlich:
+    - To: (Id)
+    - Var: (Die zu beschreibene Variable)
+    - Min: (Minimaler Wert)
+    - Max: (Maximaler Wert)
+    - Round: (Zu rundene Stellen)
+```js
+var advData = {
+    "(Ort)": {
+        1: {
+            Text: "Der Würfel dreht sich..",
+            Settings: {
+                Typ: "SetRanVar",
+                Var: "zufallszahl",
+                Min: "1",
+                Max: "6",
+                To: "Ergebnis"
+            }
+        },
+        Ergebnis: {
+            Text: "Du hast eine °zufallszahl° gewürfelt!",
+            Settings: {
+                Typ: "none"
+            }
+        }
+    }
+}
+```
+
 ### Choice
 lässt den Spieler zu eine von mehreren Auswahlmöglichkeiten springen
 
@@ -382,7 +416,8 @@ var advData = {
 ```
 
 ### DBGetAll
-## Arrays können bis dato nur als ganze ausgegeben werden.
+**Arrays können bis dato nur als ganze ausgegeben werden.**
+
 speichert alle Einträge aus einem Datenbank-Pfad in einen Array.
 
 - Zusätzlich:
