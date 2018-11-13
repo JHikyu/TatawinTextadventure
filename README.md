@@ -256,7 +256,7 @@ Gib eine Variable mit ° aus. Beispiel: °BeispielVariable°
     - Var: (Die zu beschreibene Variable)
     - Min: (Minimaler Wert)
     - Max: (Maximaler Wert)
-    - Round: (Zu rundene Stellen)
+    - Round: (Zu rundene Stellen [100 = 2 | 1000 = 3])
 ```js
 var advData = {
     "(Ort)": {
