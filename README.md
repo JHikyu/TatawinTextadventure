@@ -40,6 +40,7 @@ var advData = {
 [none](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#none),
 [Skip](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#Skip),
 [Bool](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#Bool),
+[IfNumber](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#IfNumber),
 [WriteVar](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#WriteVar),
 [SetVar](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#SetVar),
 [Choice](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#Choice),
@@ -123,6 +124,60 @@ var advData = {
         },
         AntwortFalsch: {
             Text: "Der User hat Nein geschrieben.",
+            Settings: {
+                Typ: "none"
+            }
+        }
+    }
+}
+```
+
+### IfNumber
+prüft ob eine Variable Gleich, Großer oder Kleiner als ein Vergleichswert ist.
+
+- Zusätzlich:
+    - Var: "Die zu überprüfende Variable"
+    - Compare: "Der Vergleichswert" (Kann auch eine Variable sein)
+    - Equal:
+        - To: (Id)
+    - Greater:
+        - To: (Id)
+    - Less:
+        - To: (Id)
+```js
+var advData = {
+    "(Ort)": {
+        1: {
+            Text: "Schreibe Ja oder Nein",
+            Settings: {
+                Typ: "IfNumber",
+                Var: "birnen",
+                Compare: "°äpfel°",
+                Equal: {
+                     To: "Gleich"
+                },
+                Greater: {
+                     To: "Mehr"
+                },
+                Less: {
+                     To: "Weniger"
+                }
+            }
+        },
+        Gleich: {
+            Text: "Es gibt gleich viele Birnen wie Äpfel",
+            Settings: {
+                Typ: "none"
+            }
+        },
+        Mehr: {
+            Text: "Es gibt mehr Birnen als Äpfel",
+            Settings: {
+                Typ: "none"
+            }
+        },
+        Weniger: {
+            Text: "Es gibt weniger Birnen als Äpfel",
             Settings: {
                 Typ: "none"
             }
