@@ -1,4 +1,4 @@
-# [Tatawin Textadventure](https://github.com/JHikyu/TatawinTextadventure/edit/master/README.md) / Befehle
+# [Tatawin Textadventure](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md) / Befehle
 [none](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#none),
 [Skip](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#Skip),
 [Bool](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#Bool),
