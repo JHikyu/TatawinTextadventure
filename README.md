@@ -151,7 +151,7 @@ var advData = {
             Text: "Schreibe Ja oder Nein",
             Settings: {
                 Typ: "IfNumber",
-                Var: "birnen",
+                Var: "°birnen°",
                 Compare: "°äpfel°",
                 Equal: {
                      To: "Gleich"
