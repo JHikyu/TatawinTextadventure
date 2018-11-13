@@ -8,7 +8,7 @@ Eine JavaScript Library um das erstellen von Textadventures zu vereinfachen!
 Füge [Hikyu.js](http://semver.org/) in deinem HTML Projekt hinzu
 
 ```html
-<script src="js/hikyu.js"></script>
+<script src="[dateipfad]/hikyu.js"></script>
 ```
 
 
