@@ -7,7 +7,7 @@ Eine JavaScript Library um das erstellen von Textadventures zu vereinfachen!
 ### Installation
 Füge [Hikyu.js](http://semver.org/) in deinem HTML Projekt hinzu
 
-```
+```html
 <script src="js/hikyu.js"></script>
 ```
 
@@ -18,7 +18,7 @@ Füge [Hikyu.js](http://semver.org/) in deinem HTML Projekt hinzu
 Hikyu.js ist auf Javascript [Objekte](https://www.w3schools.com/js/js_objects.asp) aufgebaut.
 
 Das ist die einfachste Möglichkeit, **Tatawin Textadventure** zu benutzen:
-```
+```js
 var advData = {
     "(Ort)": {
         (Id): {
@@ -54,7 +54,7 @@ lässt das Programm für Immer und Ewig warten.
 
 - Zusätzlich:
     - keine Funktion
-```
+```js
 var advData = {
     "(Ort)": {
         (Id): {
@@ -72,7 +72,7 @@ springt nach Drücken einer Taste zum in **To** definierten Bereich.
 
 - Zusätzlich:
     - To: (Id)
-```
+```js
 var advData = {
     "(Ort)": {
         1: {
@@ -100,7 +100,7 @@ wartet auf eingabe von Spieler. Wenn die Eingabe etwas mit Ja zu tun hat, Spring
         - To: (Id)
     - False:
         - To: (Id)
-```
+```js
 var advData = {
     "(Ort)": {
         1: {
@@ -139,7 +139,7 @@ Gib eine Variable mit ° aus. Beispiel: °BeispielVariable°
     - To: (Id)
     - Var: (Variable Name)
     - Not: (Gesperrte Wörter mit ||| Trennen)
-```
+```js
 var advData = {
     "(Ort)": {
         1: {
@@ -169,7 +169,7 @@ Gib eine Variable mit ° aus. Beispiel: °BeispielVariable°
     - To: (Id)
     - Var: (Variable Name)
     - Set: (Variable Inhalt)
-```
+```js
 var advData = {
     "(Ort)": {
         1: {
@@ -205,7 +205,7 @@ lässt den Spieler zu eine von mehreren Auswahlmöglichkeiten springen
     - 2:
         - To: (Id)
     ...
-```
+```js
 var advData = {
     "(Ort)": {
         1: {
@@ -263,7 +263,7 @@ Ja: True->To, Nein: False->To
         - To: (Id)
     - False:
         - To: (Id)
-```
+```js
 var advData = {
     "(Ort)": {
         1: {
@@ -294,7 +294,7 @@ var advData = {
         }
     }
 }
-```
+```js
 
 ### DBWrite
 überschreibt beliebig viele einträge in der Datenbank.
@@ -327,13 +327,14 @@ var advData = {
 ```
 
 ### DBGetAll
+## Arrays können bis dato nur als ganze ausgegeben werden.
 speichert alle Einträge aus einem Datenbank-Pfad in einen Array.
 
 - Zusätzlich:
     - To: (Id)
     - What: "(Pfad des Datenbank 'Ordners')"
     - Var: "(Array, in der alles gespeichert wird)"
-```
+```js
 var advData = {
     "(Ort)": {
         1: {
@@ -363,7 +364,7 @@ speichert den Eintrag aus einem Datenbank-Pfad in eine Variable.
     - What: "(Pfad des Datenbank 'Ordners')"
     - Get: "(Key des Gesuchten Elementes)"
     - Var: "(Variable in der das Element gespeichert wird)"
-```
+```js
 var advData = {
     "(Ort)": {
         1: {
