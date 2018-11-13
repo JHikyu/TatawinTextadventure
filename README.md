@@ -349,7 +349,7 @@ var advData = {
         }
     }
 }
-```js
+```
 
 ### DBWrite
 überschreibt beliebig viele einträge in der Datenbank.
@@ -362,7 +362,7 @@ var advData = {
         - 1: "(Eintragname:::Inhalt)"
         - 2: ...
         - ...
-```
+```js
 var advData = {
     "(Ort)": {
         1: {
