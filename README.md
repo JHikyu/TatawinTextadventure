@@ -15,4 +15,4 @@ Füge [Hikyu.js](http://semver.org/) in deinem HTML Projekt hinzu
 
 
 
-##[Befehle](https://github.com/JHikyu/TatawinTextadventure/blob/master/Befehle.md) 
+## [Befehle](https://github.com/JHikyu/TatawinTextadventure/blob/master/Befehle.md) 
