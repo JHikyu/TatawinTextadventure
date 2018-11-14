@@ -399,7 +399,7 @@ var advData = {
             }
         },
         2: {
-            Text: "Mein Array: °complete°",
+            Text: "Mein Array: °complete*°",
             Settings: {
                 Typ: "none"
             }
