@@ -1,16 +1,16 @@
 # [Tatawin Textadventure](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md) / Befehle
-[none](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#none),
-[Skip](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#Skip),
-[Bool](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#Bool),
-[IfNumber](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#IfNumber),
-[WriteVar](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#WriteVar),
-[SetVar](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#SetVar),
-[SetRanVar](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#SetVar),
-[Choice](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#Choice),
-[DBExists](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#DBExists),
-[DBWrite](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#DBWrite),
-[DBGetAll](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#DBGetAll),
-[DBGet](https://github.com/JHikyu/TatawinTextadventure/blob/master/README.md#DBGet)
+[none](https://github.com/JHikyu/TatawinTextadventure/blob/master/Befehle.md#none),
+[Skip](https://github.com/JHikyu/TatawinTextadventure/blob/master/Befehle.md#Skip),
+[Bool](https://github.com/JHikyu/TatawinTextadventure/blob/master/Befehle.md#Bool),
+[IfNumber](https://github.com/JHikyu/TatawinTextadventure/blob/master/Befehle.md#IfNumber),
+[WriteVar](https://github.com/JHikyu/TatawinTextadventure/blob/master/Befehle.md#WriteVar),
+[SetVar](https://github.com/JHikyu/TatawinTextadventure/blob/master/Befehle.md#SetVar),
+[SetRanVar](https://github.com/JHikyu/TatawinTextadventure/blob/master/Befehle.md#SetVar),
+[Choice](https://github.com/JHikyu/TatawinTextadventure/blob/master/Befehle.md#Choice),
+[DBExists](https://github.com/JHikyu/TatawinTextadventure/blob/master/Befehle.md#DBExists),
+[DBWrite](https://github.com/JHikyu/TatawinTextadventure/blob/master/Befehle.md#DBWrite),
+[DBGetAll](https://github.com/JHikyu/TatawinTextadventure/blob/master/Befehle.md#DBGetAll),
+[DBGet](https://github.com/JHikyu/TatawinTextadventure/blob/master/Befehle.md#DBGet)
 
 
 ## none
