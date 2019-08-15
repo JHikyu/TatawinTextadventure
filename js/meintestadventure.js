@@ -8,7 +8,7 @@ var textadventure = {
           }
      }
 }
-
+lol ich habe ein test gemacht
 
 textadventure.adventures.Tatawin.options = {
      title: "Tatawin - Zerfallene Welt",
